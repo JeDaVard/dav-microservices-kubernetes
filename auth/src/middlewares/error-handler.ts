@@ -1,11 +1,10 @@
 import { Request, Response, NextFunction } from 'express'
-import { DatabaseConnectionError, RequestValidationError } from '../errors'
+import { CustomError } from '../errors/error-interfaces'
 
 export const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
-    if (err instanceof DatabaseConnectionError) console.log('Handling a DB error')
-    if (err instanceof RequestValidationError) console.log('Handling validation error')
+    if (err instanceof CustomError) return res.status(err.code).send({ errors: err.serialize() })
 
     res.status(500).send({
-        message: 'Something went wrong!',
+        errors: [{ message: 'Something went wrong!' }],
     })
 }
