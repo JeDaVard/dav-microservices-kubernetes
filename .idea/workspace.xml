@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/infra/k8s/ingress-srv.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +71,44 @@
       <option name="presentableId" value="Default" />
       <updated>1602100094812</updated>
       <workItem from="1602100097325" duration="2675000" />
-      <workItem from="1602103665643" duration="60000" />
+      <workItem from="1602103665643" duration="1627000" />
+      <workItem from="1602105553784" duration="2011000" />
+      <workItem from="1602136513516" duration="320000" />
+      <workItem from="1602137289486" duration="10409000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="86" key="SettingsEditor" timestamp="1602103559626">
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602138883500">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602103559626" />
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602138883500" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1602103929145">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602103929145" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602140244202">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602140244202" />
+    <state x="450" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602105264339">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1602105264339" />
   </component>
 </project>
