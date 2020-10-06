@@ -1,9 +1,10 @@
 import express from 'express'
-// require('express-async-errors')
+import 'express-async-errors'
 import { json } from 'body-parser'
+
 import { signInRouter, signUpRouter, signOutRouter, currentUserRouter } from './routes'
 import { errorHandler } from './middlewares/error-handler'
-import { NotFoundError } from './errors/not-found-error'
+import { NotFoundError } from './errors'
 
 const app = express()
 
