@@ -1,31 +1,25 @@
-import express from 'express'
-import 'express-async-errors'
-import { json } from 'body-parser'
+import mongoose from 'mongoose'
 
-import { signInRouter, signUpRouter, signOutRouter, currentUserRouter } from './routes'
-import { errorHandler } from './middlewares/error-handler'
-import { NotFoundError } from './errors'
-
-const app = express()
-
-app.use(json())
+import app from './app'
 
 const port = 3000
 
-app.use('/api/users', signInRouter)
-app.use('/api/users', signUpRouter)
-app.use('/api/users', signOutRouter)
-app.use('/api/users', currentUserRouter)
+;(async function () {
+    if (!process.env.JWT_SECRET) {
+        throw new Error('JWT_SECRET env variable is missing!')
+    }
+    try {
+        await mongoose.connect('mongodb://auth-mongo-srv/auth', {
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useUnifiedTopology: true,
+        })
+        console.log('Auth mongodb is connected...')
+    } catch (e) {
+        console.error(e)
+    }
 
-app.get('/api/users/ping', (req, res) => {
-    res.status(200).send('Pong')
-})
-
-app.use('*', async () => {
-    throw new NotFoundError()
-})
-app.use(errorHandler)
-
-app.listen(port, () => {
-    console.log('Auth service is up on ' + port)
-})
+    app.listen(port, () => {
+        console.log('Auth service is up on ' + port)
+    })
+})()

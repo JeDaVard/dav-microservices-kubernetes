@@ -1,9 +1,10 @@
-import express, { Response, Request } from 'express';
+import express, { Response, Request } from 'express'
 
-const router = express.Router();
+const router = express.Router()
 
-router.post('/signout', (req: Request, res: Response) => {
-    res.send('Sign out')
+router.post('/signout', async (req: Request, res: Response) => {
+    req.session = null
+    res.status(200).send({ currentUser: null })
 })
 
 export { router }

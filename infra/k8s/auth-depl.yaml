@@ -15,6 +15,12 @@ spec:
       containers:
         - name: auth
           image: jedavard/auth
+          env:
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: JWT_SECRET
+                  name: jwt-secret
 ---
 apiVersion: v1
 kind: Service

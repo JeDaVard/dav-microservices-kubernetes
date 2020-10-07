@@ -1,9 +1,12 @@
-import express, { Response, Request } from 'express';
+import express, { Response, Request } from 'express'
 
-const router = express.Router();
+import { currentUser } from '../middlewares/current-user'
+import { requireAuth } from '../middlewares/require-auth'
 
-router.get('/currentuser', (req: Request, res: Response) => {
-    res.send('Current user')
+const router = express.Router()
+
+router.get('/currentuser', currentUser, requireAuth, async (req: Request, res: Response) => {
+    res.status(req.user ? 200 : 400).send({ currentUser: req.user || null })
 })
 
 export { router }

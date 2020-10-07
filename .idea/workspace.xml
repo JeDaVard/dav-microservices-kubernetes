@@ -20,16 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth/src/errors/error-interfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/errors/not-found-error.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/errors/bad-request-error.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/errors/not-authorized-error.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/middlewares/current-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/middlewares/require-auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/middlewares/validate-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/models/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/service/password.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/errors/database-connection-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/errors/database-connection-error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/errors/request-validation-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/errors/request-validation-error.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/middlewares/error-handler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/middlewares/error-handler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/current-user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/routes/signin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/signout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/k8s/auth-mongo-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/auth-mongo-depl.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +76,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth/src" />
+      <recent name="$PROJECT_DIR$/infra" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/auth/src/routes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/infra" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +96,8 @@
       <workItem from="1602103665643" duration="1627000" />
       <workItem from="1602105553784" duration="2011000" />
       <workItem from="1602136513516" duration="320000" />
-      <workItem from="1602137289486" duration="21667000" />
+      <workItem from="1602137289486" duration="35983000" />
+      <workItem from="1602325382865" duration="1701000" />
     </task>
     <servers />
   </component>
@@ -106,10 +117,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602176466761">
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602221323783">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602176466761" />
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602221323783" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1602164849691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

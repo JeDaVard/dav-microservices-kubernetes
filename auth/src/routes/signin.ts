@@ -1,6 +1,11 @@
-import express, { Response, Request, NextFunction } from 'express'
-import { body, validationResult } from 'express-validator'
-import { RequestValidationError } from '../errors'
+import express, { Response, Request } from 'express'
+import { body } from 'express-validator'
+import jwt from 'jsonwebtoken'
+
+import { validateRequest } from '../middlewares/validate-request'
+import { User } from '../models/user'
+import { BadRequestError } from '../errors/bad-request-error'
+import { Password } from '../service/password'
 
 const router = express.Router()
 
@@ -8,16 +13,23 @@ router.post(
     '/signin',
     [
         body('email').isEmail().withMessage('Email must be valid'),
-        body('password').trim().isLength({ min: 4, max: 20 }).withMessage('You must provide 4-20 character password'),
+        body('password').trim().notEmpty().withMessage('You must provide 4-20 character password'),
     ],
-    (req: Request, res: Response, next: NextFunction) => {
-        const errors = validationResult(req)
+    validateRequest,
+    async (req: Request, res: Response) => {
+        const { email, password } = req.body
 
-        if (!errors.isEmpty()) {
-            throw new RequestValidationError(errors.array())
-        }
+        const existingUser = await User.findOne({ email })
+        if (!existingUser) throw new BadRequestError("User doesn't exist")
 
-        res.status(200).send('Sign In')
+        const passwordsMatch = await Password.compare(existingUser.password, password)
+        if (!passwordsMatch) throw new BadRequestError('Invalid password')
+
+        const token = jwt.sign({ _id: existingUser._id, email: existingUser.email }, process.env.JWT_SECRET!, {})
+
+        req.session = { jwt: token }
+
+        res.status(200).send(existingUser)
     },
 )
 
