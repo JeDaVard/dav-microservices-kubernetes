@@ -64,3 +64,15 @@ it('returns a 400 when use existing email to sign up', async () => {
         })
         .expect(400)
 })
+
+it('sets a cookie after a successful signup', async () => {
+    const response = await request(app)
+        .post('/api/users/signup')
+        .send({
+            email: 'a@a.com',
+            password: 'aaaaaa',
+        })
+        .expect(201)
+
+    expect(response.get('Set-Cookie')).toBeDefined()
+})
