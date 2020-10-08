@@ -32,4 +32,4 @@ app.use('*', async () => {
 })
 app.use(errorHandler)
 
-export default app
+export { app }

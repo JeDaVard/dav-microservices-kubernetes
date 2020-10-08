@@ -20,25 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/errors/bad-request-error.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/errors/not-authorized-error.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/middlewares/current-user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/middlewares/require-auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/middlewares/validate-request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/service/password.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/routes/__test__/signup.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/routes/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/current-user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/routes/signin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/routes/signout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/routes/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/k8s/auth-mongo-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/auth-mongo-depl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +83,7 @@
       <workItem from="1602105553784" duration="2011000" />
       <workItem from="1602136513516" duration="320000" />
       <workItem from="1602137289486" duration="35983000" />
-      <workItem from="1602325382865" duration="1701000" />
+      <workItem from="1602325382865" duration="4306000" />
     </task>
     <servers />
   </component>
@@ -125,10 +111,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602164849691" />
-    <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602182210254">
+    <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602345947547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1602182210254" />
+    <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1602345947547" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602140244202">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
