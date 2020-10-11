@@ -26,28 +26,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ticket/@types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/current-user.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/signin.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/signout.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/signup.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/current-user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/signin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/signout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/signup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/service/password.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/setup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/k8s/ticket-mongo-depl.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/models/ticket.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/new.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/routes/new.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api/build-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/build-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra/k8s/ingress-srv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/ingress-srv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/k8s/ticket-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/ticket-depl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/models/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/current-user.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/signin.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/signout.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/signup.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/current-user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/signin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/signout.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/signup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ticket" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
@@ -87,11 +92,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth/src" />
+      <recent name="$PROJECT_DIR$/ticket/src/routes/__test__" />
       <recent name="$PROJECT_DIR$/ticket" />
       <recent name="$PROJECT_DIR$/ticket/src" />
       <recent name="$PROJECT_DIR$/common/micro-auth" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/auth/src/routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/common/micro-auth/src" />
@@ -115,7 +120,7 @@
       <workItem from="1602136513516" duration="320000" />
       <workItem from="1602137289486" duration="35983000" />
       <workItem from="1602325382865" duration="21388000" />
-      <workItem from="1602419381895" duration="1897000" />
+      <workItem from="1602419381895" duration="15222000" />
     </task>
     <servers />
   </component>
@@ -147,10 +152,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602221323783">
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602426093265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602221323783" />
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602426093265" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1602164849691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -159,6 +164,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1602345947547" />
+    <state x="422" y="189" width="595" height="522" key="find.popup" timestamp="1602430997674">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="422" y="189" width="595" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602430997674" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602140244202">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

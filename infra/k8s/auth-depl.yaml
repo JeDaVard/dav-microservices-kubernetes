@@ -16,6 +16,8 @@ spec:
         - name: auth
           image: jedavard/auth
           env:
+            - name: MONGO_URI
+              value: mongodb://auth-mongo-srv/auth
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:

@@ -2,7 +2,9 @@ import express from 'express'
 import 'express-async-errors'
 import cookieSession from 'cookie-session'
 import { json } from 'body-parser'
-import { errorHandler, NotFoundError } from '@kuber-ticket/micro-auth'
+import { errorHandler, NotFoundError, currentUser } from '@kuber-ticket/micro-auth'
+
+import { createTicketRouter } from './routes'
 
 const app = express()
 
@@ -14,6 +16,9 @@ app.use(
         secure: process.env.NODE_ENV !== 'test',
     }),
 )
+app.use(currentUser)
+
+app.use('/api/tickets', createTicketRouter)
 
 app.get('/api/users/ping', (req, res) => {
     res.status(200).send('Pong')
