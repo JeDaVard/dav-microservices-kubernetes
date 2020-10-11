@@ -26,32 +26,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/infra/k8s/ticket-mongo-depl.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/models/ticket.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/new.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/routes/new.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/update.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/routes/show.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/routes/update.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/k8s/ingress-srv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/ingress-srv.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/k8s/ticket-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/ticket-depl.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/signin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/models/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/current-user.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/signin.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/signout.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/signup.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/current-user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/new.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/new.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/__test__/show.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/routes/__test__/show.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/routes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/signin.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/signout.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/signup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/routes/new.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +109,7 @@
       <workItem from="1602136513516" duration="320000" />
       <workItem from="1602137289486" duration="35983000" />
       <workItem from="1602325382865" duration="21388000" />
-      <workItem from="1602419381895" duration="15222000" />
+      <workItem from="1602419381895" duration="23309000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,17 @@
 import express, { Request, Response } from 'express'
-import { requireAuth, validateRequest } from '@kuber-ticket/micro-auth'
+import {
+    requireAuth,
+    validateRequest,
+    NotAuthorizedError,
+    NotFoundError,
+} from '@kuber-ticket/micro-auth'
 import { body } from 'express-validator'
 import Ticket from '../models/ticket'
 
 const router = express.Router()
 
-router.post(
-    '/',
+router.put(
+    '/:id',
     requireAuth,
     [
         body('title').notEmpty().withMessage('Title is required'),
@@ -14,12 +19,13 @@ router.post(
     ],
     validateRequest,
     async (req: Request, res: Response) => {
-        const { title, price } = req.body
+        const ticket = await Ticket.findById(req.params.id)
+        if (!ticket) throw new NotFoundError()
+        if (ticket.userId.toString() !== req.user!.id) throw new NotAuthorizedError()
 
-        let ticket = Ticket.build({ title, price, userId: req.user!.id })
+        ticket.set(req.body)
         await ticket.save()
-
-        res.status(201).send(ticket)
+        res.status(200).send(ticket)
     },
 )
 

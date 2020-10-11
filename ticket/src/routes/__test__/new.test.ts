@@ -39,6 +39,6 @@ it('creates a ticket with valid params', async () => {
         .post('/api/tickets')
         .set('Cookie', global.signUpAndCookie())
         .send({ title, price })
-    console.log(response.body)
+
     expect(response.body.title).toEqual(title)
 })

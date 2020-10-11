@@ -24,7 +24,7 @@ router.post(
         const passwordsMatch = await Password.compare(existingUser.password, password)
         if (!passwordsMatch) throw new BadRequestError('Invalid password')
 
-        const token = jwt.sign({ _id: existingUser._id, email: existingUser.email }, process.env.JWT_SECRET!, {})
+        const token = jwt.sign({ id: existingUser.id, email: existingUser.email }, process.env.JWT_SECRET!, {})
 
         req.session = { jwt: token }
 

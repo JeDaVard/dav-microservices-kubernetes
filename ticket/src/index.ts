@@ -17,12 +17,12 @@ const port = 3000
             useCreateIndex: true,
             useUnifiedTopology: true,
         })
-        console.log('Auth mongodb is connected...')
+        console.log('Ticket mongodb is connected...')
     } catch (e) {
         console.error(e)
     }
 
     app.listen(port, () => {
-        console.log('Auth service is up on ' + port)
+        console.log('Ticket service is up on ' + port)
     })
 })()

@@ -4,10 +4,19 @@ import jwt from 'jsonwebtoken'
 import request from 'supertest'
 import { app } from '../app'
 
+interface Ticket {
+    title: string
+    price: number
+    id: number
+    createdAt: string
+    updatedAt: string
+}
+
 declare global {
     namespace NodeJS {
         interface Global {
             signUpAndCookie(): string[]
+            createTicket(title: string, price: number): Promise<Ticket | null>
         }
     }
 }
@@ -40,7 +49,7 @@ afterAll(async () => {
 
 global.signUpAndCookie = () => {
     const payload = {
-        id: '5cg83hiduwe8ideiwk',
+        id: new mongoose.Types.ObjectId(),
         email: 'text@example.com',
     }
     const token = jwt.sign(payload, process.env.JWT_SECRET!)
@@ -52,4 +61,12 @@ global.signUpAndCookie = () => {
     const base64 = Buffer.from(sessionJson).toString('base64')
 
     return [`express:sess=${base64}`]
+}
+
+global.createTicket = async (title, price) => {
+    const response = await request(app)
+        .post('/api/tickets')
+        .set('Cookie', global.signUpAndCookie())
+        .send({ title, price })
+    return response.body
 }
