@@ -2,10 +2,9 @@ import express from 'express'
 import 'express-async-errors'
 import cookieSession from 'cookie-session'
 import { json } from 'body-parser'
+import { errorHandler, NotFoundError } from '@kuber-ticket/micro-auth'
 
 import { signInRouter, signUpRouter, signOutRouter, currentUserRouter } from './routes'
-import { errorHandler } from './middlewares/error-handler'
-import { NotFoundError } from './errors'
 
 const app = express()
 

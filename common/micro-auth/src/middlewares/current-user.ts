@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express'
 import jwt from 'jsonwebtoken'
 
-interface UserPayload {
+export interface UserPayload {
     email: string
     createdAt: string
     updatedAt: string
@@ -15,7 +15,7 @@ declare global {
     }
 }
 // Or you can do this way
-// interface ExtendedRequest extends Request {
+// export interface ExtendedRequest extends Request {
 //     [key: string]: any
 // }
 

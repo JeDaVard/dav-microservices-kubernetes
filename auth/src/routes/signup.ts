@@ -1,9 +1,8 @@
 import express, { Response, Request } from 'express'
 import { body } from 'express-validator'
 import jwt from 'jsonwebtoken'
+import { DatabaseConnectionError, validateRequest } from '@kuber-ticket/micro-auth'
 
-import { DatabaseConnectionError } from '../errors'
-import { validateRequest } from '../middlewares/validate-request'
 import { User } from '../models/user'
 
 const router = express.Router()

@@ -1,7 +1,5 @@
 import express, { Response, Request } from 'express'
-
-import { currentUser } from '../middlewares/current-user'
-import { requireAuth } from '../middlewares/require-auth'
+import { currentUser } from '@kuber-ticket/micro-auth'
 
 const router = express.Router()
 
