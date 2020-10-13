@@ -26,17 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nats-test/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/events/base-listener.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/events/base-publisher.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/events/subjects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/events/ticket-created-event.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/events/ticket-created-listener.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/listener.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nats-test/src/publisher.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/k8s/nats-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/nats-depl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nats-test/src/events/base-publisher.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nats-test/src/events/base-publisher.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nats-test/src/events/ticket-create-publisher.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nats-test/src/events/ticket-create-publisher.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nats-test/src/events/ticket-created-listener.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nats-test/src/events/ticket-created-listener.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nats-test/src/publisher.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nats-test/src/publisher.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +98,7 @@
       <workItem from="1602136513516" duration="320000" />
       <workItem from="1602137289486" duration="35983000" />
       <workItem from="1602325382865" duration="21388000" />
-      <workItem from="1602419381895" duration="39209000" />
+      <workItem from="1602419381895" duration="40463000" />
     </task>
     <servers />
   </component>
@@ -152,9 +146,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="422" y="189" width="595" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602430997674" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602140244202">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602602266276">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602602266276" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602140244202" />
     <state x="450" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602105264339">
       <screen x="0" y="0" width="1440" height="900" />
