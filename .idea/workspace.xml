@@ -26,7 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ticket/src/routes/update.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/routes/update.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/events/base-listener.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/events/base-publisher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/events/subjects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/events/ticket-created-event.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/events/ticket-created-listener.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/listener.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nats-test/src/publisher.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/k8s/nats-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/k8s/nats-depl.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +66,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nats-test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
@@ -66,11 +76,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nats-test" />
       <recent name="$PROJECT_DIR$/auth/src" />
       <recent name="$PROJECT_DIR$/ticket/src/routes/__test__" />
       <recent name="$PROJECT_DIR$/ticket" />
       <recent name="$PROJECT_DIR$/ticket/src" />
-      <recent name="$PROJECT_DIR$/common/micro-auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/common/micro-auth/src" />
@@ -94,7 +104,7 @@
       <workItem from="1602136513516" duration="320000" />
       <workItem from="1602137289486" duration="35983000" />
       <workItem from="1602325382865" duration="21388000" />
-      <workItem from="1602419381895" duration="23710000" />
+      <workItem from="1602419381895" duration="39209000" />
     </task>
     <servers />
   </component>
@@ -126,10 +136,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602426093265">
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602486858727">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602426093265" />
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602486858727" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1602164849691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
