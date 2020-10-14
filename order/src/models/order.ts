@@ -1,14 +1,16 @@
 import mongoose from 'mongoose'
+import { OrderStatus } from '@kuber-ticket/micro-events'
+import { TicketDoc } from './ticket'
 
 interface OrderAttrs {
     userId: string
-    status: string
+    status: OrderStatus
     expiresAt: Date
     ticket: TicketDoc
 }
 
 interface OrderDoc extends mongoose.Document {
-    status: string
+    status: OrderStatus
     userId: string
     expiresAt: Date
     ticket: TicketDoc

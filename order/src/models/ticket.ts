@@ -1,21 +1,21 @@
 import mongoose from 'mongoose'
+import { Order } from './order'
+import { OrderStatus } from '@kuber-ticket/micro-events/build'
+import { BadRequestError } from '@kuber-ticket/micro-auth/build'
 
-interface TicketAttr {
+interface TicketAttrs {
     title: string
     price: number
-    userId: string
 }
 
-interface TicketDoc extends mongoose.Document {
+export interface TicketDoc extends mongoose.Document {
     title: string
     price: number
-    userId: string
-    createdAt: string
-    updatedAt: string
+    isReserved(): Promise<boolean>
 }
 
 interface TicketModel extends mongoose.Model<TicketDoc> {
-    build(attrs: TicketAttr): TicketDoc
+    build(attrs: TicketAttrs): TicketDoc
 }
 
 const ticketSchema = new mongoose.Schema(
@@ -26,12 +26,8 @@ const ticketSchema = new mongoose.Schema(
         },
         price: {
             type: Number,
+            required: true,
             min: 0,
-            required: true,
-        },
-        userId: {
-            type: String,
-            required: true,
         },
     },
     {
@@ -45,10 +41,18 @@ const ticketSchema = new mongoose.Schema(
     },
 )
 
-ticketSchema.statics.build = (attrs: TicketAttr) => {
+ticketSchema.statics.build = function (attrs: TicketAttrs) {
     return new Ticket(attrs)
+}
+
+ticketSchema.methods.isReserved = async function () {
+    const reservedOrder = await Order.findOne({
+        ticket: this,
+        status: { $in: [OrderStatus.Created, OrderStatus.Pending, OrderStatus.Fulfilled] },
+    })
+    return !!reservedOrder
 }
 
 const Ticket = mongoose.model<TicketDoc, TicketModel>('Ticket', ticketSchema)
 
-export default Ticket
+export { Ticket }
