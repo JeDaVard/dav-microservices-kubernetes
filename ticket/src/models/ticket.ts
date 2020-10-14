@@ -30,7 +30,7 @@ const ticketSchema = new mongoose.Schema(
             required: true,
         },
         userId: {
-            type: mongoose.Types.ObjectId,
+            type: String,
             required: true,
         },
     },

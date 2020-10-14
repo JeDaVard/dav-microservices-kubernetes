@@ -28,7 +28,7 @@ spec:
             - '2'
             - '-SD'
             - '-cid'
-            - 'ticket'
+            - 'kubernetes-ticket-project'
 ---
 apiVersion: v1
 kind: Service

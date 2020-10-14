@@ -25,7 +25,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.name
             - name: NATS_CLUSTER_ID
-              value: ticket
+              value: kubernetes-ticket-project
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
