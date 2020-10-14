@@ -8,10 +8,10 @@ const port = 3000
 ;(async function () {
     try {
         await nats.connect(env.NATS_CLUSTER_ID!, env.NATS_CLIENT_ID!, env.NATS_URL!, () => {
-            console.log('Ticket NATS is connected...')
+            console.log('Order NATS is connected...')
         })
         nats.client.on('close', () => {
-            console.log('Ticket NATS is disconnected')
+            console.log('Order NATS is disconnected')
             process.exit()
         })
 
@@ -23,12 +23,12 @@ const port = 3000
             useCreateIndex: true,
             useUnifiedTopology: true,
         })
-        console.log('Ticket mongodb is connected...')
+        console.log('Order mongodb is connected...')
     } catch (e) {
         console.error(e)
     }
 
     app.listen(port, () => {
-        console.log('Ticket service is up on ' + port)
+        console.log('Order service is up on ' + port)
     })
 })()

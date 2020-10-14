@@ -1,0 +1,1 @@
+Common auth code to share between some microservices

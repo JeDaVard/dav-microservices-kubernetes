@@ -1,9 +1,7 @@
-import { BaseListener } from './base-listener'
 import { Message } from 'node-nats-streaming'
-import { Subjects } from './subjects'
-import { TicketCreatedEvent } from './ticket-created-event'
+import { TicketCreatedEvent, Subjects, Listener } from '@kuber-ticket/micro-events'
 
-export class TicketCreatedListener extends BaseListener<TicketCreatedEvent> {
+export class TicketCreatedListener extends Listener<TicketCreatedEvent> {
     readonly subject: Subjects.TicketCreated = Subjects.TicketCreated
     queueGroupName = 'payments-service'
     onMessage(data: TicketCreatedEvent['data'], msg: Message) {

@@ -6,7 +6,7 @@ interface Event {
     data: any
 }
 
-export abstract class BaseListener<T extends Event> {
+export abstract class Listener<T extends Event> {
     abstract subject: T['subject']
     abstract onMessage(parsedData: T['data'], msg: Message): void
     abstract queueGroupName: string
@@ -21,11 +21,7 @@ export abstract class BaseListener<T extends Event> {
             .setDurableName(this.queueGroupName)
     }
     listen() {
-        const subscription = this.stan.subscribe(
-            this.subject,
-            this.queueGroupName,
-            this.subscriptionOptions(),
-        )
+        const subscription = this.stan.subscribe(this.subject, this.queueGroupName, this.subscriptionOptions())
         subscription.on('message', (msg: Message) => {
             console.log(`Message received :: ${this.subject}/${this.queueGroupName}`)
             const parsedData = this.parseMessage(msg)

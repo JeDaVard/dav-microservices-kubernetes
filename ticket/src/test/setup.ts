@@ -4,6 +4,8 @@ import jwt from 'jsonwebtoken'
 import request from 'supertest'
 import { app } from '../app'
 
+jest.mock('@kuber-ticket/micro-events')
+
 interface Ticket {
     title: string
     price: number

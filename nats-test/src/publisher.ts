@@ -14,6 +14,7 @@ stan.on('connect', async () => {
         id: '2',
         title: 'Some title',
         price: 10,
+        userId: 'u123',
     }
     try {
         await publisher.publish(data)

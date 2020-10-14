@@ -7,6 +7,8 @@ import {
 } from '@kuber-ticket/micro-auth'
 import { body } from 'express-validator'
 import Ticket from '../models/ticket'
+import { nats } from '@kuber-ticket/micro-events'
+import { TicketUpdatedPublisher } from '../events/publishers/ticket-updated-publisher'
 
 const router = express.Router()
 
@@ -25,6 +27,13 @@ router.put(
 
         ticket.set({ title: req.body.title, price: req.body.price })
         await ticket.save()
+        await new TicketUpdatedPublisher(nats.client).publish({
+            id: ticket.id,
+            title: ticket.title,
+            price: ticket.price,
+            userId: ticket.userId,
+        })
+
         res.status(200).send(ticket)
     },
 )

@@ -1,7 +1,5 @@
-import { BasePublisher } from './base-publisher'
-import { Subjects } from './subjects'
-import { TicketCreatedEvent } from './ticket-created-event'
+import { Publisher, Subjects, TicketCreatedEvent } from '@kuber-ticket/micro-events'
 
-export class TicketCreatePublisher extends BasePublisher<TicketCreatedEvent> {
+export class TicketCreatePublisher extends Publisher<TicketCreatedEvent> {
     readonly subject: Subjects.TicketCreated = Subjects.TicketCreated
 }

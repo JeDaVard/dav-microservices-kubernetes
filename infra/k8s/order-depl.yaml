@@ -1,31 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ticket-depl
+  name: order-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ticket
+      app: order
   template:
     metadata:
       labels:
-        app: ticket
+        app: order
     spec:
       containers:
-        - name: ticket
-          image: jedavard/ticket
+        - name: order
+          image: jedavard/order
           env:
             - name: MONGO_URI
-              value: mongodb://ticket-mongo-srv/ticket
+              value: mongodb://order-mongo-srv/order
             - name: NATS_URL
               value: http://nats-srv:4222
+            - name: NATS_CLUSTER_ID
+              value: order
             - name: NATS_CLIENT_ID
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
-            - name: NATS_CLUSTER_ID
-              value: ticket
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
@@ -35,12 +35,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ticket-srv
+  name: order-srv
 spec:
   selector:
-    app: ticket
+    app: order
   ports:
-    - name: ticket
+    - name: order
       protocol: TCP
       port: 3000
       targetPort: 3000

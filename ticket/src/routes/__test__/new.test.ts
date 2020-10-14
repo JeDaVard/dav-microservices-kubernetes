@@ -11,10 +11,13 @@ it('can only be accessed if the user is signed in', async () => {
 })
 
 it('returns a status other than 401 if the user is authenticated', async () => {
-    const response = await request(app).post('/api/tickets').set('Cookie', global.signUpAndCookie()).send({
-        title: 'title',
-        price: 10,
-    })
+    const response = await request(app)
+        .post('/api/tickets')
+        .set('Cookie', global.signUpAndCookie())
+        .send({
+            title: 'title',
+            price: 10,
+        })
     expect(response.status).not.toEqual(401)
 })
 
