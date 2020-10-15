@@ -27,11 +27,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/routes/__test__/new.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/__test__/new.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/hooks/use-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/hooks/use-request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/models/order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/models/order.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/__test__/delete.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/__test__/delete.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/routes/__test__/show.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/__test__/show.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/new.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/delete.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/delete.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/routes/show.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/show.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="993a9a2b5b1cb12a354ccb964b20e27cbb0a2c86" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
@@ -61,8 +70,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/order" />
-    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/order/node_modules/jest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order/src/routes/__test__" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
@@ -71,19 +79,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/order" />
-      <recent name="$PROJECT_DIR$/order/src/routes/__test__" />
-      <recent name="$PROJECT_DIR$/ticket/src/routes" />
-      <recent name="$PROJECT_DIR$/order/src/routes" />
-      <recent name="$PROJECT_DIR$/order/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/order/src" />
       <recent name="$PROJECT_DIR$/infra/k8s" />
       <recent name="$PROJECT_DIR$/infra" />
       <recent name="$PROJECT_DIR$/common/micro-events/src" />
       <recent name="$PROJECT_DIR$/common/micro-events/src/events" />
+      <recent name="$PROJECT_DIR$/common/micro-auth/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order/src/routes/__test__" />
+      <recent name="$PROJECT_DIR$/ticket/src/routes" />
+      <recent name="$PROJECT_DIR$/order/src/routes" />
+      <recent name="$PROJECT_DIR$/order/src" />
+      <recent name="$PROJECT_DIR$/infra/k8s" />
     </key>
   </component>
   <component name="RunManager">
@@ -123,7 +131,9 @@
       <workItem from="1602419381895" duration="47949000" />
       <workItem from="1602628517003" duration="1021000" />
       <workItem from="1602629681678" duration="9975000" />
-      <workItem from="1602669213996" duration="25817000" />
+      <workItem from="1602669213996" duration="13117000" />
+      <workItem from="1602744620490" duration="4785000" />
+      <workItem from="1602749819683" duration="8598000" />
     </task>
     <servers />
   </component>
@@ -155,43 +165,43 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602697437677">
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602605359330">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602697437677" />
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602605359329" />
     <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602486858727" />
-    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1602707959299">
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1602744428652">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.bottom/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959299" />
-    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1602707959295">
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428652" />
+    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1602744428650">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.center/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959295" />
-    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1602707959294">
+    <state width="1419" height="240" key="GridCell.Tab.0.center/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428650" />
+    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1602744428647">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.left/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959294" />
-    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1602707959297">
+    <state width="1419" height="240" key="GridCell.Tab.0.left/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428647" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1602744428651">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959297" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428651" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1602164849691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602164849691" />
-    <state width="538" height="445" key="SwitcherDM" timestamp="1602708062046">
+    <state width="538" height="445" key="SwitcherDM" timestamp="1602635375993">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="538" height="445" key="SwitcherDM/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602708062046" />
+    <state width="538" height="445" key="SwitcherDM/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602635375993" />
     <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602345947547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1602345947547" />
-    <state x="422" y="189" width="595" height="522" key="find.popup" timestamp="1602687732726">
+    <state x="422" y="189" width="624" height="522" key="find.popup" timestamp="1602754737183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="422" y="189" width="595" height="522" key="find.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602687732726" />
+    <state x="422" y="189" width="624" height="522" key="find.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602754737183" />
     <state x="422" y="189" width="595" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602430997674" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602633921464">
       <screen x="0" y="0" width="1440" height="900" />

@@ -1,22 +1,18 @@
 import { MongoMemoryServer } from 'mongodb-memory-server'
 import mongoose from 'mongoose'
 import jwt from 'jsonwebtoken'
+import { Ticket, TicketDoc } from '../models/ticket'
+import { Order, OrderDoc } from '../models/order'
+import { OrderStatus } from '@kuber-ticket/micro-events'
 
 jest.mock('@kuber-ticket/micro-events')
-
-interface Ticket {
-    title: string
-    price: number
-    id: number
-    createdAt: string
-    updatedAt: string
-}
 
 declare global {
     namespace NodeJS {
         interface Global {
-            signUpAndCookie(): string[]
-            createTicket(title: string, price: number): Promise<Ticket | null>
+            signUpAndCookie(): { id: string; cookies: string[] }
+            createTicket(): Promise<TicketDoc>
+            createOrder(ticket: TicketDoc, userId: string): Promise<OrderDoc>
         }
     }
 }
@@ -60,13 +56,21 @@ global.signUpAndCookie = () => {
 
     const base64 = Buffer.from(sessionJson).toString('base64')
 
-    return [`express:sess=${base64}`]
+    const cookies = [`express:sess=${base64}`]
+
+    return { id: payload.id.toHexString(), cookies }
 }
 
-// global.createTicket = async (title, price) => {
-//     const response = await request(app)
-//         .post('/api/tickets')
-//         .set('Cookie', global.signUpAndCookie())
-//         .send({ title, price })
-//     return response.body
-// }
+global.createTicket = async () => {
+    const ticket = Ticket.build({ title: 'some', price: 20 })
+    await ticket.save()
+    return ticket
+}
+
+global.createOrder = async (ticket: TicketDoc, userId: string) => {
+    const expiresAt = new Date()
+    expiresAt.setSeconds(expiresAt.getSeconds() + 60)
+    const order = Order.build({ expiresAt, ticket, userId, status: OrderStatus.Created })
+    await order.save()
+    return order
+}

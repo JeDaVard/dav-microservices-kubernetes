@@ -1,32 +1,29 @@
 import { app } from '../../app'
 import request from 'supertest'
+import { OrderStatus } from '@kuber-ticket/micro-events'
 
-it('returns 200 if the order was successfully deleted', async () => {
-    const id = ''
-    const user = ''
-    return request(app)
-        .delete('/api/orders/' + id)
-        .set('Cookie', user)
+it('returns 200 if the order was successfully changed to canceled', async () => {
+    const user = global.signUpAndCookie()
+    const ticket = await global.createTicket()
+    const order = await global.createOrder(ticket, user.id)
+
+    const response = await request(app)
+        .delete('/api/orders/' + order.id)
+        .set('Cookie', user.cookies)
         .send()
-        .expect(200)
+    expect(response.body.status).toEqual(OrderStatus.Canceled)
 })
 
-it('returns 401 if user is not authenticated', async () => {
-    const id = ''
-    const user = ''
-    return request(app)
-        .delete('/api/orders/' + id)
-        .set('Cookie', user)
-        .send()
-        .expect(401)
-})
+it('returns 400 if user tries to delete not owned order', async () => {
+    const user1 = global.signUpAndCookie()
+    const ticket = await global.createTicket()
+    const order = await global.createOrder(ticket, user1.id)
 
-it('returns 403 if user tries to delete not owned order', async () => {
-    const id = ''
-    const user = ''
+    const user2 = global.signUpAndCookie()
+
     return request(app)
-        .delete('/api/orders/' + id)
-        .set('Cookie', user)
+        .delete('/api/orders/' + order.id)
+        .set('Cookie', user2.cookies)
         .send()
-        .expect(401)
+        .expect(400)
 })

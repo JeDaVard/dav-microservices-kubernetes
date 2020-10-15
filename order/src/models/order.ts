@@ -9,7 +9,7 @@ interface OrderAttrs {
     ticket: TicketDoc
 }
 
-interface OrderDoc extends mongoose.Document {
+export interface OrderDoc extends mongoose.Document {
     status: OrderStatus
     userId: string
     expiresAt: Date
