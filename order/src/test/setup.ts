@@ -1,8 +1,6 @@
 import { MongoMemoryServer } from 'mongodb-memory-server'
 import mongoose from 'mongoose'
 import jwt from 'jsonwebtoken'
-import request from 'supertest'
-import { app } from '../app'
 
 jest.mock('@kuber-ticket/micro-events')
 
@@ -65,10 +63,10 @@ global.signUpAndCookie = () => {
     return [`express:sess=${base64}`]
 }
 
-global.createTicket = async (title, price) => {
-    const response = await request(app)
-        .post('/api/tickets')
-        .set('Cookie', global.signUpAndCookie())
-        .send({ title, price })
-    return response.body
-}
+// global.createTicket = async (title, price) => {
+//     const response = await request(app)
+//         .post('/api/tickets')
+//         .set('Cookie', global.signUpAndCookie())
+//         .send({ title, price })
+//     return response.body
+// }

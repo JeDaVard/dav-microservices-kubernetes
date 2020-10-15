@@ -26,16 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/order/src/events/order-create-publisher.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/models/ticket.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/models/order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/models/order.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/__test__/new.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/__test__/new.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/__test__/show.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/__test__/show.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/new.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/models/ticket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/models/ticket.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/show.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/show.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/order/src/routes/__test__" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/order/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
@@ -75,19 +72,39 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order" />
       <recent name="$PROJECT_DIR$/order/src/routes/__test__" />
       <recent name="$PROJECT_DIR$/ticket/src/routes" />
       <recent name="$PROJECT_DIR$/order/src/routes" />
       <recent name="$PROJECT_DIR$/order/src" />
-      <recent name="$PROJECT_DIR$/infra/k8s" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order/src" />
       <recent name="$PROJECT_DIR$/infra/k8s" />
       <recent name="$PROJECT_DIR$/infra" />
       <recent name="$PROJECT_DIR$/common/micro-events/src" />
       <recent name="$PROJECT_DIR$/common/micro-events/src/events" />
-      <recent name="$PROJECT_DIR$/common/micro-auth/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="returns an error 404 if ticket doesnt exist" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/order/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/order" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/order/src/routes/__test__/new.test.ts" />
+      <test-names>
+        <test-name value="returns an error 404 if ticket doesnt exist" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.returns an error 404 if ticket doesnt exist" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -106,7 +123,7 @@
       <workItem from="1602419381895" duration="47949000" />
       <workItem from="1602628517003" duration="1021000" />
       <workItem from="1602629681678" duration="9975000" />
-      <workItem from="1602669213996" duration="20013000" />
+      <workItem from="1602669213996" duration="25817000" />
     </task>
     <servers />
   </component>
@@ -143,14 +160,30 @@
     </state>
     <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602697437677" />
     <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602486858727" />
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1602707959299">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959299" />
+    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1602707959295">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.center/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959295" />
+    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1602707959294">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.left/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959294" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1602707959297">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="240" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602707959297" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1602164849691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602164849691" />
-    <state width="538" height="445" key="SwitcherDM" timestamp="1602635375993">
+    <state width="538" height="445" key="SwitcherDM" timestamp="1602708062046">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="538" height="445" key="SwitcherDM/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602635375993" />
+    <state width="538" height="445" key="SwitcherDM/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602708062046" />
     <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602345947547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
