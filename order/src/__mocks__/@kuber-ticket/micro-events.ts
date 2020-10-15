@@ -1,3 +1,4 @@
+export * from '@kuber-ticket/micro-events'
 export const nats = {
     client: {
         publish: jest

@@ -11,6 +11,7 @@ import { body } from 'express-validator'
 
 import { Ticket } from '../models/ticket'
 import { Order } from '../models/order'
+import { OrderCreatePublisher } from '../events/order-create-publisher'
 
 const router = express.Router()
 
@@ -52,6 +53,16 @@ router.post(
         await order.save()
 
         // Publish an event saying that the order is created
+        await new OrderCreatePublisher(nats.client).publish({
+            id: order.id,
+            userId: req.user!.id,
+            status: OrderStatus.Created,
+            expiresAt: order.expiresAt.toISOString(),
+            ticket: {
+                id: ticket.id,
+                price: ticket.price,
+            },
+        })
 
         res.status(201).send(order)
     },

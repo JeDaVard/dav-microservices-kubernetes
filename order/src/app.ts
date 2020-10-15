@@ -4,12 +4,7 @@ import cookieSession from 'cookie-session'
 import { json } from 'body-parser'
 import { errorHandler, NotFoundError, currentUser } from '@kuber-ticket/micro-auth'
 
-import {
-    createTicketRouter,
-    showTicketRouter,
-    updateTicketRouter,
-    deleteTicketRouter,
-} from './routes'
+import { createTicketRouter, showTicketRouter, deleteTicketRouter } from './routes'
 
 const app = express()
 
@@ -25,7 +20,6 @@ app.use(currentUser)
 
 app.use('/api/orders', createTicketRouter)
 app.use('/api/orders', showTicketRouter)
-app.use('/api/orders', updateTicketRouter)
 app.use('/api/orders', deleteTicketRouter)
 
 app.get('/api/users/ping', (req, res) => {

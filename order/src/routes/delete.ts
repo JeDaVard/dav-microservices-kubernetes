@@ -1,7 +1,9 @@
 import express, { Request, Response } from 'express'
 import { requireAuth, BadRequestError, NotFoundError } from '@kuber-ticket/micro-auth'
+import { OrderStatus, nats } from '@kuber-ticket/micro-events'
+
 import { Order } from '../models/order'
-import { OrderStatus } from '@kuber-ticket/micro-events'
+import { OrderCanceledPublisher } from '../events/order-canceled-publisher'
 
 const router = express.Router()
 
@@ -14,6 +16,13 @@ router.delete('/:id', requireAuth, async (req: Request, res: Response) => {
 
     order.status = OrderStatus.Canceled
     await order.save()
+
+    await new OrderCanceledPublisher(nats.client).publish({
+        id: order.id,
+        ticket: {
+            id: order.ticket.id,
+        },
+    })
 
     res.status(200).send(order)
 })

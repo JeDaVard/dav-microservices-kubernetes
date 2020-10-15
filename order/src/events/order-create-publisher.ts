@@ -1,7 +1,5 @@
-import { Publisher } from '@kuber-ticket/micro-events/build'
+import { Publisher, OrderCreatedEvent, Subjects } from '@kuber-ticket/micro-events'
 
-// class OrderCreatePublisher extends Publisher<any> {
-//     publish(data: any): Promise<void> {
-//         return super.publish(data)
-//     }
-// }
+export class OrderCreatePublisher extends Publisher<OrderCreatedEvent> {
+    subject: Subjects.OrderCreated = Subjects.OrderCreated
+}

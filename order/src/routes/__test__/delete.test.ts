@@ -1,6 +1,7 @@
 import { app } from '../../app'
 import request from 'supertest'
 import { OrderStatus } from '@kuber-ticket/micro-events'
+import mongoose from 'mongoose'
 
 it('returns 200 if the order was successfully changed to canceled', async () => {
     const user = global.signUpAndCookie()
@@ -26,4 +27,14 @@ it('returns 400 if user tries to delete not owned order', async () => {
         .set('Cookie', user2.cookies)
         .send()
         .expect(400)
+})
+
+it("returns 404 if user tries to delete an order which doesn't exist", async () => {
+    const user = global.signUpAndCookie().cookies
+    const id = new mongoose.Types.ObjectId()
+    return request(app)
+        .delete('/api/orders/' + id)
+        .set('Cookie', user)
+        .send()
+        .expect(404)
 })

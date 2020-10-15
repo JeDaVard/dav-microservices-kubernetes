@@ -5,7 +5,8 @@ import { Ticket, TicketDoc } from '../models/ticket'
 import { Order, OrderDoc } from '../models/order'
 import { OrderStatus } from '@kuber-ticket/micro-events'
 
-jest.mock('@kuber-ticket/micro-events')
+// DO NOT UNCOMMENT THIS WITHOUT A DEEP INVESTIGATION
+// jest.mock('@kuber-ticket/micro-events')
 
 declare global {
     namespace NodeJS {
