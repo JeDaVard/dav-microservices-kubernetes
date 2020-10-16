@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import { app } from './app'
 import { nats } from '@kuber-ticket/micro-events'
 import { env } from './config'
-import { TicketUpdatedListener, TicketCreatedListener } from './events'
+import { TicketUpdatedListener, TicketCreatedListener, ExpirationCompleteListener } from './events'
 
 const port = 3000
 
@@ -25,6 +25,7 @@ const port = 3000
         // Run listener instances
         new TicketCreatedListener(nats.client).listen()
         new TicketUpdatedListener(nats.client).listen()
+        new ExpirationCompleteListener(nats.client).listen()
 
         // Connect to DB
         await mongoose.connect(env.MONGO_URI!, {
