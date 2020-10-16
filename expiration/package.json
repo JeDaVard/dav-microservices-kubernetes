@@ -1,0 +1,33 @@
+{
+  "name": "expiration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --poll src/index.ts",
+    "test": "jest --watch --no-cache"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./src/test/setup.ts"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kuber-ticket/micro-events": "^2.0.5",
+    "@types/bull": "^3.14.4",
+    "bull": "^3.18.0",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1"
+  }
+}
