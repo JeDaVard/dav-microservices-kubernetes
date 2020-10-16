@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@kuber-ticket/micro-events": "^2.0.5",
+    "@kuber-ticket/micro-events": "^2.0.6",
     "@types/bull": "^3.14.4",
     "bull": "^3.18.0",
     "ts-node-dev": "^1.0.0-pre.63",

@@ -1,5 +1,6 @@
 import { env } from './config'
 import { nats } from '@kuber-ticket/micro-events'
+import { OrderCreatedListener } from './events/listeners/order-created-listener'
 ;(async function () {
     try {
         // Connect to NATS
@@ -14,6 +15,9 @@ import { nats } from '@kuber-ticket/micro-events'
 
         process.on('SIGINT', () => nats.client.close())
         process.on('SIGTERM', () => nats.client.close())
+
+        // Listeners
+        new OrderCreatedListener(nats.client).listen()
     } catch (e) {
         console.error(e)
     }
