@@ -3,7 +3,7 @@ import request from 'supertest'
 import { OrderStatus } from '@kuber-ticket/micro-events'
 import mongoose from 'mongoose'
 
-it('returns 200 if the order was successfully changed to canceled', async () => {
+it('returns 200 if the order was successfully changed to cancelled', async () => {
     const user = global.signUpAndCookie()
     const ticket = await global.createTicket()
     const order = await global.createOrder(ticket, user.id)
@@ -12,7 +12,7 @@ it('returns 200 if the order was successfully changed to canceled', async () => 
         .delete('/api/orders/' + order.id)
         .set('Cookie', user.cookies)
         .send()
-    expect(response.body.status).toEqual(OrderStatus.Canceled)
+    expect(response.body.status).toEqual(OrderStatus.Cancelled)
 })
 
 it('returns 400 if user tries to delete not owned order', async () => {

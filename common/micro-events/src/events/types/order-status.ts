@@ -2,8 +2,8 @@ export enum OrderStatus {
     // When order a normal (not reserved) ticket
     Created = 'created',
 
-    // When order a reserved ticket, or user canceled, or payment time is expired
-    Canceled = 'canceled',
+    // When order a reserved ticket, or user cancelled, or payment time is expired
+    Cancelled = 'cancelled',
 
     // Successfully reserved, waiting for payment
     Pending = 'pending',

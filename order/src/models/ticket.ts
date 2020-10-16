@@ -35,7 +35,6 @@ const ticketSchema = new mongoose.Schema(
         },
     },
     {
-        timestamps: true,
         toJSON: {
             transform(doc, ret) {
                 ret.id = ret._id

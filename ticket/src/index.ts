@@ -4,6 +4,7 @@ import mongoose from 'mongoose'
 
 import { app } from './app'
 import { OrderCreatedListener } from './events/listeners/order-created-listener'
+import { OrderCancelledListener } from './events/listeners/order-cancelled-listener'
 
 const port = 3000
 
@@ -24,6 +25,7 @@ const port = 3000
 
         // Listen for events
         new OrderCreatedListener(nats.client).listen()
+        new OrderCancelledListener(nats.client).listen()
 
         // Connect to DB
         await mongoose.connect(env.MONGO_URI!, {

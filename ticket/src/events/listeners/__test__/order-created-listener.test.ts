@@ -51,3 +51,23 @@ it('acks the message', async () => {
 
     expect(msg.ack).toHaveBeenCalled()
 })
+
+it('publishes ticket update event', async () => {
+    const { listener, data, msg } = await setup()
+
+    await listener.onMessage(data, msg)
+
+    expect(nats.client.publish).toHaveBeenCalled()
+})
+
+it('published event has been defined in the call stack', async () => {
+    const { listener, data, msg } = await setup()
+
+    await listener.onMessage(data, msg)
+
+    const currentCallOrderId = (nats.client.publish as jest.Mock).mock.calls.find((call) => {
+        return JSON.parse(call[1]).orderId === data.id
+    })
+
+    expect(currentCallOrderId).toBeDefined()
+})

@@ -29,7 +29,7 @@ const orderSchema = new mongoose.Schema(
         },
         status: {
             type: String,
-            enum: ['created', 'pending', 'canceled', 'fulfilled'],
+            enum: ['created', 'pending', 'cancelled', 'fulfilled'],
         },
         expiresAt: {
             type: mongoose.Schema.Types.Date,
@@ -40,7 +40,6 @@ const orderSchema = new mongoose.Schema(
         },
     },
     {
-        timestamps: true,
         toJSON: {
             transform(doc, ret) {
                 ret.id = ret._id

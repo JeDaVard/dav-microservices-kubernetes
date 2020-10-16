@@ -4,6 +4,7 @@ import {
     validateRequest,
     NotAuthorizedError,
     NotFoundError,
+    BadRequestError,
 } from '@kuber-ticket/micro-auth'
 import { body } from 'express-validator'
 import Ticket from '../models/ticket'
@@ -23,10 +24,12 @@ router.put(
     async (req: Request, res: Response) => {
         const ticket = await Ticket.findById(req.params.id)
         if (!ticket) throw new NotFoundError()
+
+        if (ticket.orderId) throw new BadRequestError('Cannot edit a reserved ticket')
+
         if (ticket.userId.toString() !== req.user!.id) throw new NotAuthorizedError()
 
         ticket.set({ title: req.body.title, price: req.body.price })
-        ticket.increment() // Version __v incrementation as a further concurrency issue resolver
         await ticket.save()
 
         await new TicketUpdatedPublisher(nats.client).publish({
