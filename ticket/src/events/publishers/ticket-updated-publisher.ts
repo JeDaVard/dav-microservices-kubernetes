@@ -1,5 +1,5 @@
-import { Publisher, Subjects, OrderCreatedEvent } from '@kuber-ticket/micro-events/build'
+import { Publisher, Subjects, TicketUpdatedEvent } from '@kuber-ticket/micro-events/build'
 
-export class TicketUpdatedPublisher extends Publisher<OrderCreatedEvent> {
-    subject: Subjects.OrderCreated = Subjects.OrderCreated
+export class TicketUpdatedPublisher extends Publisher<TicketUpdatedEvent> {
+    subject: Subjects.TicketUpdated = Subjects.TicketUpdated
 }

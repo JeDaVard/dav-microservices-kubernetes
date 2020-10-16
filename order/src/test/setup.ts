@@ -63,7 +63,11 @@ global.signUpAndCookie = () => {
 }
 
 global.createTicket = async () => {
-    const ticket = Ticket.build({ title: 'some', price: 20 })
+    const ticket = Ticket.build({
+        title: 'some',
+        price: 20,
+        id: new mongoose.Types.ObjectId().toHexString(),
+    })
     await ticket.save()
     return ticket
 }

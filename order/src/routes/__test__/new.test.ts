@@ -12,7 +12,11 @@ it('returns 401 if user is not authenticated', async () => {
 })
 
 it('returns 400 error if ticket is reserved', async () => {
-    const ticket = Ticket.build({ title: 'some title', price: 1 })
+    const ticket = Ticket.build({
+        title: 'some title',
+        price: 1,
+        id: new mongoose.Types.ObjectId().toHexString(),
+    })
     await ticket.save()
     const expiresAt = new Date()
     expiresAt.setSeconds(expiresAt.getSeconds() + 60)
@@ -40,7 +44,11 @@ it('returns an error 404 if ticket doesnt exist', async () => {
 })
 
 it('creates an order and response with the order and its ticket', async () => {
-    const ticket = Ticket.build({ title: 'some title', price: 1 })
+    const ticket = Ticket.build({
+        title: 'some title',
+        price: 1,
+        id: new mongoose.Types.ObjectId().toHexString(),
+    })
     await ticket.save()
     const response = await request(app)
         .post('/api/orders/')
@@ -50,7 +58,11 @@ it('creates an order and response with the order and its ticket', async () => {
 })
 
 it('Emits an event of order created', async () => {
-    const ticket = Ticket.build({ title: 'some title', price: 1 })
+    const ticket = Ticket.build({
+        title: 'some title',
+        price: 1,
+        id: new mongoose.Types.ObjectId().toHexString(),
+    })
     await ticket.save()
 
     await request(app)

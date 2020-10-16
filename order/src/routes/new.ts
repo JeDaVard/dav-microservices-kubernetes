@@ -11,7 +11,7 @@ import { body } from 'express-validator'
 
 import { Ticket } from '../models/ticket'
 import { Order } from '../models/order'
-import { OrderCreatePublisher } from '../events/order-create-publisher'
+import { OrderCreatePublisher } from '../events'
 
 const router = express.Router()
 
@@ -58,6 +58,7 @@ router.post(
             userId: req.user!.id,
             status: OrderStatus.Created,
             expiresAt: order.expiresAt.toISOString(),
+            version: order.version,
             ticket: {
                 id: ticket.id,
                 price: ticket.price,

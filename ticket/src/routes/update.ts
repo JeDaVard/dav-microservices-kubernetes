@@ -26,12 +26,15 @@ router.put(
         if (ticket.userId.toString() !== req.user!.id) throw new NotAuthorizedError()
 
         ticket.set({ title: req.body.title, price: req.body.price })
+        ticket.increment() // Version __v incrementation as a further concurrency issue resolver
         await ticket.save()
+
         await new TicketUpdatedPublisher(nats.client).publish({
             id: ticket.id,
             title: ticket.title,
             price: ticket.price,
             userId: ticket.userId,
+            version: ticket.version,
         })
 
         res.status(200).send(ticket)

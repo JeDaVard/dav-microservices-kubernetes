@@ -19,6 +19,7 @@ router.delete('/:id', requireAuth, async (req: Request, res: Response) => {
 
     await new OrderCanceledPublisher(nats.client).publish({
         id: order.id,
+        version: order.version,
         ticket: {
             id: order.ticket.id,
         },
