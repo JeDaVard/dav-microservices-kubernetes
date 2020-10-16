@@ -1,15 +1,19 @@
-import mongoose from 'mongoose'
-import { app } from './app'
-import { nats } from '@kuber-ticket/micro-events'
 import { env } from './config'
+import { nats } from '@kuber-ticket/micro-events'
+import mongoose from 'mongoose'
+
+import { app } from './app'
+import { OrderCreatedListener } from './events/listeners/order-created-listener'
 
 const port = 3000
 
 ;(async function () {
     try {
+        // Connect to NATS
         await nats.connect(env.NATS_CLUSTER_ID!, env.NATS_CLIENT_ID!, env.NATS_URL!, () => {
             console.log('Ticket NATS is connected...')
         })
+        // Take care of .. if connection closes close the process too, or if the process closes close the connection too
         nats.client.on('close', () => {
             console.log('Ticket NATS is disconnected')
             process.exit()
@@ -18,6 +22,10 @@ const port = 3000
         process.on('SIGINT', () => nats.client.close())
         process.on('SIGTERM', () => nats.client.close())
 
+        // Listen for events
+        new OrderCreatedListener(nats.client).listen()
+
+        // Connect to DB
         await mongoose.connect(env.MONGO_URI!, {
             useNewUrlParser: true,
             useCreateIndex: true,
@@ -27,7 +35,7 @@ const port = 3000
     } catch (e) {
         console.error(e)
     }
-
+    // Run the server
     app.listen(port, () => {
         console.log('Ticket service is up on ' + port)
     })

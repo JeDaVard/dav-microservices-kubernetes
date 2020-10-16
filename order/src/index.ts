@@ -12,6 +12,7 @@ const port = 3000
         await nats.connect(env.NATS_CLUSTER_ID!, env.NATS_CLIENT_ID!, env.NATS_URL!, () => {
             console.log('Order NATS is connected...')
         })
+        // End process in case of NATS issues
         nats.client.on('close', () => {
             console.log('Order NATS is disconnected')
             process.exit()

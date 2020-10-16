@@ -8,7 +8,7 @@ interface Event {
 
 export abstract class Publisher<T extends Event> {
     abstract subject: T['subject']
-    constructor(private stan: Stan) {}
+    public constructor(protected stan: Stan) {}
     publish(data: T['data']): Promise<void> {
         return new Promise((resolve, reject) => {
             this.stan.publish(this.subject, JSON.stringify(data), (err) => {

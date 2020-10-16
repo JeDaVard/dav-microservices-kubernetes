@@ -10,7 +10,7 @@ export abstract class Listener<T extends Event> {
     abstract subject: T['subject']
     abstract onMessage(parsedData: T['data'], msg: Message): void
     abstract queueGroupName: string
-    public constructor(private stan: Stan) {}
+    public constructor(protected stan: Stan) {}
     protected ackWait = 5 * 1000
     subscriptionOptions() {
         return this.stan
