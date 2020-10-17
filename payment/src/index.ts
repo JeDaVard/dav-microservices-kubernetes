@@ -3,6 +3,7 @@ import { nats } from '@kuber-ticket/micro-events'
 import mongoose from 'mongoose'
 
 import { app } from './app'
+import { OrderCreatedListener } from './events/listeners/order-created-listener'
 
 const port = 3000
 
@@ -22,6 +23,7 @@ const port = 3000
         process.on('SIGTERM', () => nats.client.close())
 
         // Listen for events
+        new OrderCreatedListener(nats.client).listen()
 
         // Connect to DB
         await mongoose.connect(env.MONGO_URI!, {

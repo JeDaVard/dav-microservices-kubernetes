@@ -61,21 +61,3 @@ global.signUpAndCookie = () => {
 
     return { id: payload.id.toHexString(), cookies }
 }
-
-global.createTicket = async () => {
-    const ticket = Ticket.build({
-        title: 'some',
-        price: 20,
-        id: new mongoose.Types.ObjectId().toHexString(),
-    })
-    await ticket.save()
-    return ticket
-}
-
-global.createOrder = async (ticket: TicketDoc, userId: string) => {
-    const expiresAt = new Date()
-    expiresAt.setSeconds(expiresAt.getSeconds() + 60)
-    const order = Order.build({ expiresAt, ticket, userId, status: OrderStatus.Created })
-    await order.save()
-    return order
-}
