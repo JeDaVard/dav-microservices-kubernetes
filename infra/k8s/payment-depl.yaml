@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payment
+  template:
+    metadata:
+      labels:
+        app: payment
+    spec:
+      containers:
+        - name: payment
+          image: jedavard/payment
+          env:
+            - name: MONGO_URI
+              value: mongodb://payment-mongo-srv/payment
+            - name: NATS_URL
+              value: http://nats-srv:4222
+            - name: NATS_CLIENT_ID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: NATS_CLUSTER_ID
+              value: kubernetes-ticket-project
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: JWT_SECRET
+                  name: jwt-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: payment-srv
+spec:
+  selector:
+    app: payment
+  ports:
+    - name: payment
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
