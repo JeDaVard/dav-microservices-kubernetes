@@ -17,7 +17,7 @@ export class PaymentCreatedListener extends Listener<PaymentCreatedEvent> {
 
         order.set({ status: OrderStatus.Fulfilled })
         await order.save()
-        console.log(order)
+
         msg.ack()
     }
 }
