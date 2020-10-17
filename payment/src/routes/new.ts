@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
 import { body } from 'express-validator'
-import { OrderStatus, nats } from '@kuber-ticket/micro-events/'
+import { OrderStatus, nats } from '@kuber-ticket/micro-events'
 import {
     requireAuth,
     validateRequest,
@@ -51,7 +51,7 @@ router.post(
             stripeId: payment.stripeId,
         })
 
-        res.status(201).send({ success: true })
+        res.status(201).send({ id: payment.id })
     },
 )
 
