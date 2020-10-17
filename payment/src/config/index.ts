@@ -4,6 +4,7 @@
 
 const env = {
     JWT_SECRET: process.env.JWT_SECRET,
+    STRIPE_PRIVATE_KEY: process.env.STRIPE_PRIVATE_KEY,
     MONGO_URI: process.env.MONGO_URI,
     NATS_URL: process.env.NATS_URL,
     NATS_CLIENT_ID: process.env.NATS_CLIENT_ID,

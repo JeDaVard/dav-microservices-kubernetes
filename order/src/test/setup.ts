@@ -45,18 +45,19 @@ afterAll(async () => {
 })
 
 global.signUpAndCookie = () => {
+    // Define a token payload for a user
     const payload = {
         id: new mongoose.Types.ObjectId(),
         email: 'text@example.com',
     }
+    // Sign a token
     const token = jwt.sign(payload, process.env.JWT_SECRET!)
-
+    // Create a session object
     const session = { jwt: token }
-
     const sessionJson = JSON.stringify(session)
-
+    // Convert to base64 format
     const base64 = Buffer.from(sessionJson).toString('base64')
-
+    // Imitate default expressJS session-cookies appearance
     const cookies = [`express:sess=${base64}`]
 
     return { id: payload.id.toHexString(), cookies }

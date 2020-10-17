@@ -5,7 +5,7 @@ import { Types } from 'mongoose'
 
 it("successfully updates the ticket's title and price and returns it updated", async () => {
     const params = { title: 'some title', price: 10 }
-    const cookie = global.signUpAndCookie()
+    const cookie = global.signUpAndCookie().cookies
     const ticket = await request(app)
         .post(`/api/tickets`)
         .set('Cookie', cookie)
@@ -21,7 +21,7 @@ it("successfully updates the ticket's title and price and returns it updated", a
 
 it('fails with 403 if user tries to update not own ticket', async () => {
     const params = { title: 'some title', price: 10 }
-    const cookie = global.signUpAndCookie()
+    const cookie = global.signUpAndCookie().cookies
     const ticket = await global.createTicket('asf', 99)
     return request(app)
         .put(`/api/tickets/${ticket!.id}`)
@@ -38,7 +38,7 @@ it('fails with 401 if a guest tries to update a ticket', async () => {
 
 it('fails with 400 if the author tries to edit a ticket which is already reserved', async () => {
     const params = { title: 'some title', price: 10 }
-    const cookie = global.signUpAndCookie()
+    const cookie = global.signUpAndCookie().cookies
     const createResponse = await request(app)
         .post(`/api/tickets`)
         .set('Cookie', cookie)
