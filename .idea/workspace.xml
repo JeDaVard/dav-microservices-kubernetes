@@ -26,12 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/micro-events/src/events/payment-created-event.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/micro-events/src/events/subjects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-events/src/events/subjects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/micro-events/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-events/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/__mocks__/stripe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/__mocks__/stripe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/models/payment" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/models/payment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/events/publishers/payment-created-publisher.ts" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/events/publishers/payment-created-publisher.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/routes/new.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +48,7 @@
         <entry key="$PROJECT_DIR$" value="993a9a2b5b1cb12a354ccb964b20e27cbb0a2c86" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/common/micro-events" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
@@ -136,7 +132,7 @@
       <workItem from="1602920750243" duration="1557000" />
       <workItem from="1602922552584" duration="3956000" />
       <workItem from="1602929115839" duration="5212000" />
-      <workItem from="1602936046501" duration="8691000" />
+      <workItem from="1602936046501" duration="8978000" />
     </task>
     <servers />
   </component>

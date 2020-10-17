@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
 import { body } from 'express-validator'
-import { OrderStatus } from '@kuber-ticket/micro-events/'
+import { OrderStatus, nats } from '@kuber-ticket/micro-events/'
 import {
     requireAuth,
     validateRequest,
@@ -11,6 +11,7 @@ import {
 import { Order } from '../models/order'
 import { stripe } from '../stripe'
 import { Payment } from '../models/payment'
+import { PaymentCreatedPublisher } from '../events/publishers/payment-created-publisher'
 
 const router = Router()
 
@@ -43,6 +44,12 @@ router.post(
             stripeId: charge.id,
         })
         await payment.save()
+
+        new PaymentCreatedPublisher(nats.client).publish({
+            id: payment._id,
+            orderId: payment.orderId,
+            stripeId: payment.stripeId,
+        })
 
         res.status(201).send({ success: true })
     },
