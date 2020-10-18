@@ -20,33 +20,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api/build-client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/hooks/use-request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/_app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/orders/[orderId].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/orders/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/tickets/[ticketId].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/tickets/new.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/new.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/tests.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +47,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
@@ -152,6 +133,7 @@
       <workItem from="1602929115839" duration="5212000" />
       <workItem from="1602936046501" duration="11850000" />
       <workItem from="1602949740122" duration="5298000" />
+      <workItem from="1603031599651" duration="59000" />
     </task>
     <servers />
   </component>
@@ -191,7 +173,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
