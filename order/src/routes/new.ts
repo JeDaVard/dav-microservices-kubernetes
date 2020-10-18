@@ -15,7 +15,7 @@ import { OrderCreatePublisher } from '../events'
 
 const router = express.Router()
 
-const EXPIRATION_WINDOW_SECONDS = 15
+const EXPIRATION_WINDOW_SECONDS = 15 * 60
 
 router.post(
     '/',

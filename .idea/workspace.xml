@@ -27,16 +27,26 @@
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/hooks/use-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/hooks/use-request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/events/listeners/payment-created-listener.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/events/listeners/payment-created-listener.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/api/build-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/hooks/use-request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/orders/[orderId].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/orders/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tickets/[ticketId].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tickets/new.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/new.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +85,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/auth/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -140,7 +150,8 @@
       <workItem from="1602920750243" duration="1557000" />
       <workItem from="1602922552584" duration="3956000" />
       <workItem from="1602929115839" duration="5212000" />
-      <workItem from="1602936046501" duration="11709000" />
+      <workItem from="1602936046501" duration="11850000" />
+      <workItem from="1602949740122" duration="5298000" />
     </task>
     <servers />
   </component>
@@ -223,9 +234,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="240" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428651" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1602164849691">
+    <state x="229" y="86" key="SettingsEditor" timestamp="1602949783763">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="229" y="86" key="SettingsEditor/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602949783763" />
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602164849691" />
     <state width="538" height="445" key="SwitcherDM" timestamp="1602635375993">
       <screen x="0" y="0" width="1440" height="900" />
@@ -235,10 +247,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1602345947547" />
-    <state x="422" y="189" width="624" height="580" key="find.popup" timestamp="1602945634199">
+    <state x="422" y="189" width="624" height="580" key="find.popup" timestamp="1603007605114">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="422" y="189" width="624" height="580" key="find.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602945634199" />
+    <state x="422" y="189" width="624" height="580" key="find.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1603007605114" />
     <state x="422" y="189" width="595" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602430997674" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602882244067">
       <screen x="0" y="0" width="1440" height="900" />
