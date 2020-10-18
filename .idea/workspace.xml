@@ -25,7 +25,29 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="" />
+    <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/api/build-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/hooks/use-request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/auth/signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/orders/[orderId].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/orders/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tickets/[ticketId].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tickets/new.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/routes/new.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/routes/new.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
