@@ -2,11 +2,11 @@ name: order-test
 
 on:
   push:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'order/**'
   pull_request:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'order/**'
 

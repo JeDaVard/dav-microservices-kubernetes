@@ -2,11 +2,11 @@ name: payment-test
 
 on:
   push:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'payment/**'
   pull_request:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'payment/**'
 

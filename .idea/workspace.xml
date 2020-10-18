@@ -25,11 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/routes/__test__/signout.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/__test__/signout.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/setup.ts" afterDir="false" />
-    </list>
+    <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +132,8 @@
       <workItem from="1602936046501" duration="11709000" />
       <workItem from="1603032078281" duration="376000" />
       <workItem from="1603032524711" duration="653000" />
-      <workItem from="1603033296540" duration="1616000" />
+      <workItem from="1603033296540" duration="1904000" />
+      <workItem from="1603036245436" duration="366000" />
     </task>
     <servers />
   </component>
