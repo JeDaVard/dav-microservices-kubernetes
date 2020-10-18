@@ -20,16 +20,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/__test__/signout.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/__test__/signout.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
       <workItem from="1602936046501" duration="11709000" />
       <workItem from="1603032078281" duration="376000" />
       <workItem from="1603032524711" duration="653000" />
-      <workItem from="1603033296540" duration="741000" />
+      <workItem from="1603033296540" duration="1616000" />
     </task>
     <servers />
   </component>
@@ -177,7 +176,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
