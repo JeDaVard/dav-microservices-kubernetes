@@ -1,0 +1,19 @@
+name: ticket-test
+
+on:
+  push:
+    branches: [ main ]
+    path:
+      - 'ticket/**'
+  pull_request:
+    branches: [ main ]
+    path:
+      - 'ticket/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd ticket && npm install && npm run test:ci

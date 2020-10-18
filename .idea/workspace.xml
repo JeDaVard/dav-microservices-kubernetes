@@ -20,13 +20,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/routes/__test__/signout.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/routes/__test__/signout.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/setup.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/payment/src/events/listeners" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.github/workflows" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
@@ -71,19 +73,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/payment/src/events/listeners" />
-      <recent name="$PROJECT_DIR$/infra/k8s" />
-      <recent name="$PROJECT_DIR$/payment/src" />
-      <recent name="$PROJECT_DIR$/payment" />
-      <recent name="$PROJECT_DIR$/expiration/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/pages" />
       <recent name="$PROJECT_DIR$/infra/k8s" />
       <recent name="$PROJECT_DIR$/order/src/events/publishers" />
       <recent name="$PROJECT_DIR$/ticket/src/events/listeners/__test__" />
       <recent name="$PROJECT_DIR$/ticket/src/events/listeners" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+      <recent name="$PROJECT_DIR$/payment/src/events/listeners" />
+      <recent name="$PROJECT_DIR$/infra/k8s" />
+      <recent name="$PROJECT_DIR$/payment/src" />
+      <recent name="$PROJECT_DIR$/payment" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,7 +134,9 @@
       <workItem from="1602922552584" duration="3956000" />
       <workItem from="1602929115839" duration="5212000" />
       <workItem from="1602936046501" duration="11709000" />
-      <workItem from="1603032078281" duration="103000" />
+      <workItem from="1603032078281" duration="376000" />
+      <workItem from="1603032524711" duration="653000" />
+      <workItem from="1603033296540" duration="1616000" />
     </task>
     <servers />
   </component>
@@ -172,7 +176,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
