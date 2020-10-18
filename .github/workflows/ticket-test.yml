@@ -2,11 +2,11 @@ name: ticket-test
 
 on:
   push:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'ticket/**'
   pull_request:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'ticket/**'
 

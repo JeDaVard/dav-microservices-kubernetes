@@ -2,11 +2,11 @@ name: auth-test
 
 on:
   push:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'auth/**'
   pull_request:
-    branches: [ main ]
+#    branches: [ main ]
     path:
       - 'auth/**'
 
