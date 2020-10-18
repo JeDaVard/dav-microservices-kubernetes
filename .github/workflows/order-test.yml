@@ -1,10 +1,14 @@
-name: Node.js CI
+name: order-test
 
 on:
   push:
     branches: [ main ]
+    path:
+      - 'order/**'
   pull_request:
     branches: [ main ]
+    path:
+      - 'order/**'
 
 jobs:
   build:
@@ -12,4 +16,4 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cd auth && npm install && npm run test:ci
+      - run: cd order && npm install && npm run test:ci
