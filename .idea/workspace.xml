@@ -26,17 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/hooks/use-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/hooks/use-request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/auth/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/auth/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/events/listeners/payment-created-listener.ts" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/events/listeners/payment-created-listener.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +131,7 @@
       <workItem from="1602922552584" duration="3956000" />
       <workItem from="1602929115839" duration="5212000" />
       <workItem from="1602936046501" duration="11709000" />
+      <workItem from="1603032078281" duration="103000" />
     </task>
     <servers />
   </component>
@@ -194,10 +185,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602945546009">
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603032150562">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602945546009" />
+    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1603032150562" />
     <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602486858727" />
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1602790822219">
       <screen x="0" y="0" width="1440" height="900" />
