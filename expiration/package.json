@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --poll src/index.ts",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --poll src/index.ts",
     "test": "jest --watch --no-cache"
   },
   "jest": {
@@ -21,7 +22,8 @@
     "@kuber-ticket/micro-events": "^2.0.6",
     "@types/bull": "^3.14.4",
     "bull": "^3.18.0",
-    "ts-node-dev": "^1.0.0-pre.63",
+    "ts-node-dev": "^1.0.0",
+    "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   },
   "devDependencies": {

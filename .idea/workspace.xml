@@ -25,7 +25,53 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="" />
+    <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_33_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_37_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_39_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_41_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_33__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_37__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_39__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_41__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/micro-auth/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-auth/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/micro-auth/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-auth/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/micro-events/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-events/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/micro-events/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-events/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expiration/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expiration/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expiration/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expiration/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expiration/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/order/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/order/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/payment/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/payment/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +81,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,6 +94,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
     <option name="namespace" value="default" />
@@ -58,30 +111,31 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.github/workflows" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/micro-events" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v14.9.0/lib/node_modules/prettier" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v15.0.1/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/auth/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/common/micro-auth/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/micro-events" />
+      <recent name="$PROJECT_DIR$/common/micro-auth" />
+      <recent name="$PROJECT_DIR$/auth" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/expiration" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/pages" />
       <recent name="$PROJECT_DIR$/infra/k8s" />
       <recent name="$PROJECT_DIR$/order/src/events/publishers" />
       <recent name="$PROJECT_DIR$/ticket/src/events/listeners/__test__" />
       <recent name="$PROJECT_DIR$/ticket/src/events/listeners" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/.github/workflows" />
-      <recent name="$PROJECT_DIR$/payment/src/events/listeners" />
-      <recent name="$PROJECT_DIR$/infra/k8s" />
-      <recent name="$PROJECT_DIR$/payment/src" />
-      <recent name="$PROJECT_DIR$/payment" />
     </key>
   </component>
   <component name="RunManager">
@@ -133,7 +187,17 @@
       <workItem from="1603032078281" duration="376000" />
       <workItem from="1603032524711" duration="653000" />
       <workItem from="1603033296540" duration="1904000" />
-      <workItem from="1603036245436" duration="366000" />
+      <workItem from="1603036245436" duration="654000" />
+      <workItem from="1603135446837" duration="778000" />
+      <workItem from="1603138397108" duration="1249000" />
+      <workItem from="1603866705718" duration="661000" />
+      <workItem from="1604148702568" duration="717000" />
+      <workItem from="1604229644731" duration="68000" />
+      <workItem from="1604246119415" duration="235000" />
+      <workItem from="1604252214294" duration="17000" />
+      <workItem from="1605945815212" duration="11000" />
+      <workItem from="1605948452846" duration="2402000" />
+      <workItem from="1605956810219" duration="6011000" />
     </task>
     <servers />
   </component>
@@ -216,10 +280,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="240" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428651" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1602949783763">
+    <state x="229" y="86" key="SettingsEditor" timestamp="1604148908530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="229" y="86" key="SettingsEditor/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602949783763" />
+    <state x="229" y="86" key="SettingsEditor/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1604148908530" />
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602164849691" />
     <state width="538" height="445" key="SwitcherDM" timestamp="1602635375993">
       <screen x="0" y="0" width="1440" height="900" />
