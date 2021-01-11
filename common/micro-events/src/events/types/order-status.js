@@ -5,8 +5,8 @@ var OrderStatus;
 (function (OrderStatus) {
     // When order a normal (not reserved) ticket
     OrderStatus["Created"] = "created";
-    // When order a reserved ticket, or user canceled, or payment time is expired
-    OrderStatus["Canceled"] = "canceled";
+    // When order a reserved ticket, or user cancelled, or payment time is expired
+    OrderStatus["Cancelled"] = "cancelled";
     // Successfully reserved, waiting for payment
     OrderStatus["Pending"] = "pending";
     // All done

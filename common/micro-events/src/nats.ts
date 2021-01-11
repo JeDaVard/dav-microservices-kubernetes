@@ -11,7 +11,7 @@ class Nats {
     connect(clusterID: string, clientID: string, url: string, callback?: () => void) {
         this._client = connect(clusterID, clientID, { url })
 
-        return new Promise((resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
             this._client!.on('connect', () => {
                 if (callback) callback()
                 resolve()

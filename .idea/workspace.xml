@@ -26,51 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b362629d-01de-4d86-b6a5-d15cc9623ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_33_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_37_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_39_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20,_10_41_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_33__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_37__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_39__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_20__10_41__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/auth/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/micro-auth/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-auth/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/micro-auth/src/middlewares/error-handler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-auth/src/middlewares/error-handler.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/micro-auth/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-auth/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/micro-events/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-events/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/micro-events/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/micro-events/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expiration/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expiration/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expiration/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expiration/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expiration/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/expiration/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/order/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/order/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/order/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/payment/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/payment/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/payment/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +53,7 @@
         <entry key="$PROJECT_DIR$" value="993a9a2b5b1cb12a354ccb964b20e27cbb0a2c86" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/common/micro-auth" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JsFlowSettings">
@@ -113,22 +75,23 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/micro-events" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth/src/routes/__test__" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/order/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v15.0.1/lib/node_modules/prettier" />
-    <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/common/micro-auth/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/auth/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth/src/routes/__test__" />
       <recent name="$PROJECT_DIR$/common/micro-events" />
       <recent name="$PROJECT_DIR$/common/micro-auth" />
       <recent name="$PROJECT_DIR$/auth" />
       <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/expiration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/pages" />
@@ -197,7 +160,22 @@
       <workItem from="1604252214294" duration="17000" />
       <workItem from="1605945815212" duration="11000" />
       <workItem from="1605948452846" duration="2402000" />
-      <workItem from="1605956810219" duration="6011000" />
+      <workItem from="1605956810219" duration="6083000" />
+      <workItem from="1606077436478" duration="429000" />
+      <workItem from="1606077886748" duration="872000" />
+      <workItem from="1606079427076" duration="632000" />
+      <workItem from="1606080838905" duration="451000" />
+      <workItem from="1606119020024" duration="57000" />
+      <workItem from="1606119778775" duration="2015000" />
+      <workItem from="1606123037021" duration="2072000" />
+      <workItem from="1606135173402" duration="2164000" />
+      <workItem from="1606144730394" duration="1699000" />
+      <workItem from="1608584408015" duration="69000" />
+      <workItem from="1608584516946" duration="162000" />
+      <workItem from="1609337901688" duration="283000" />
+      <workItem from="1609858535729" duration="1360000" />
+      <workItem from="1610132691616" duration="1048000" />
+      <workItem from="1610200516882" duration="12350000" />
     </task>
     <servers />
   </component>
@@ -223,6 +201,23 @@
         <option value="$PROJECT_DIR$/common/micro-events/src/events/base-publisher.js" />
         <option value="$PROJECT_DIR$/common/micro-events/src/events/types/order-status.js" />
         <option value="$PROJECT_DIR$/common/micro-events/src/events/types/order-status.d.ts" />
+        <option value="$PROJECT_DIR$/auth/src/routes/__test__/current-user.test.js" />
+        <option value="$PROJECT_DIR$/common/micro-events/src/events/payment-created-event.js" />
+        <option value="$PROJECT_DIR$/common/micro-events/src/events/expiration-complete-event.js" />
+        <option value="$PROJECT_DIR$/common/micro-events/src/mock_backup/nats.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/index.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/request-validation-error.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/not-found-error.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/error-interfaces.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/not-authorized-error.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/index.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/bad-request-error.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/errors/database-connection-error.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/middlewares/require-auth.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/middlewares/index.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/middlewares/current-user.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/middlewares/validate-request.js" />
+        <option value="$PROJECT_DIR$/common/micro-auth/src/middlewares/error-handler.js" />
       </list>
     </option>
   </component>
@@ -249,63 +244,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603032150562">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1603032150562" />
-    <state x="455" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602486858727" />
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1602790822219">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602790822219" />
-    <state x="485" y="178" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602851532423">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="485" y="178" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602851532423" />
-    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1602744428652">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.bottom/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428652" />
-    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1602744428650">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.center/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428650" />
-    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1602744428647">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.left/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428647" />
-    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1602744428651">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.right/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602744428651" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1604148908530">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="229" y="86" key="SettingsEditor/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1604148908530" />
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602164849691" />
-    <state width="538" height="445" key="SwitcherDM" timestamp="1602635375993">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="538" height="445" key="SwitcherDM/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602635375993" />
-    <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602345947547">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="338" y="64" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1602345947547" />
-    <state x="422" y="189" width="624" height="580" key="find.popup" timestamp="1603007605114">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="422" y="189" width="624" height="580" key="find.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1603007605114" />
-    <state x="422" y="189" width="595" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602430997674" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602882244067">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-1440.0.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1602882244067" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602140244202" />
-    <state x="450" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602105264339">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="450" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1602105264339" />
   </component>
 </project>

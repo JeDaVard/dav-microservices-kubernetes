@@ -1,6 +1,8 @@
 import { Request, Response, NextFunction } from 'express'
 import { CustomError } from '../errors/error-interfaces'
 
+// TODO investigate the ts err reason
+// @ts-ignore
 export const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
     if (err instanceof CustomError) return res.status(err.code).send({ errors: err.serialize() })
 

@@ -10,7 +10,9 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.nats = void 0;
+exports.nats = exports.Message = void 0;
+var node_nats_streaming_1 = require("node-nats-streaming");
+Object.defineProperty(exports, "Message", { enumerable: true, get: function () { return node_nats_streaming_1.Message; } });
 var nats_1 = require("./nats");
 Object.defineProperty(exports, "nats", { enumerable: true, get: function () { return nats_1.nats; } });
 // Exports from re-exported folders
@@ -19,6 +21,8 @@ __exportStar(require("./events/base-listener"), exports);
 __exportStar(require("./events/ticket-created-event"), exports);
 __exportStar(require("./events/ticket-updated-event"), exports);
 __exportStar(require("./events/order-created-event"), exports);
-__exportStar(require("./events/order-canceled-event"), exports);
+__exportStar(require("./events/order-cancelled-event"), exports);
+__exportStar(require("./events/expiration-complete-event"), exports);
+__exportStar(require("./events/payment-created-event"), exports);
 __exportStar(require("./events/subjects"), exports);
 __exportStar(require("./events/types/order-status"), exports);
