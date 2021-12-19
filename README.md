@@ -13,7 +13,7 @@ What's in box?
 9. The project uses "micro-events" module as a common module built on top of NATS streaming
 10. Github action (which run tests before merging)
 #
-The project is not production ready, because it uses ts-node-dev as starter
+The project is not production ready, because it uses ts-node-dev as starter.
 
 
 https://github.com/BretFisher/docker-mastery-for-nodejs
